@@ -42,6 +42,13 @@ Powerlevel10k config used, so the look is reproducible on any terminal with a
 | background jobs | `70` | `POWERLEVEL9K_BACKGROUND_JOBS_FOREGROUND` |
 | kubernetes | `134` | `POWERLEVEL9K_KUBECONTEXT_DEFAULT_FOREGROUND` |
 
+## Two variants
+
+| file | what |
+|---|---|
+| `starship.toml` | the lean baseline (this README describes it) |
+| `starship-full.toml` | same look plus `$git_commit` (detached HEAD hash), `$git_state` (rebase/merge/bisect with step counts), `renamed`/`deleted` in the git status, directory truncation to the last 4 components with a `…/` prefix, and a `kubernetes` segment enabled but gated on `Chart.yaml` / `kustomization.yaml` / `skaffold.yaml` / `k8s/` / `kubernetes/` / `charts/` |
+
 ## Install
 
 ```sh
