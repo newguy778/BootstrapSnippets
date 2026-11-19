@@ -29,6 +29,17 @@ The macOS 26+ native glass look is included as a comment — swap
 `background-blur = true` for `background-blur = macos-glass-regular` and drop the
 opacity to ~0.7.
 
+## Two variants
+
+| file | what |
+|---|---|
+| `config` | the baseline macOS config (this README describes it) |
+| `config-updated` | newer take: macOS 26+ Liquid Glass instead of plain blur (`background-blur = macos-glass-regular`, `background-opacity = 0.7`), glass-matched Dock icon, padding `12/10`, `unfocused-split-opacity`, `font-thicken`, plus commented-out extras — Option-as-Alt, notify-on-command-finish, and a global quick-terminal hotkey |
+
+Both are self-contained; pick one (keep it as `~/.config/ghostty/config`) or merge
+the blocks you want. Note that `background-opacity` and quick-terminal settings
+only take effect after a full quit and relaunch, not a config reload.
+
 ## Install
 
 ```sh
