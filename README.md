@@ -7,6 +7,7 @@ and how to install it — no dotfile framework, no plugin manager required.
 | path | what |
 |---|---|
 | [`starship/`](starship/) | Lean single-line [Starship](https://starship.rs) prompt — 256-colour palette, no separators, p10k-inspired |
+| [`ghostty/`](ghostty/) | macOS [Ghostty](https://ghostty.org) terminal config — Safari-style tabs, Catppuccin Mocha, blur, tuned padding |
 
 ## Using a snippet
 

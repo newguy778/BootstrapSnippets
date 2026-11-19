@@ -1,0 +1,36 @@
+# Ghostty config — ~/.config/ghostty/config
+# Reload after edits: cmd+shift+,   (or: ghostty +reload-config)
+
+# --- Appearance: merge tabs into the titlebar (Safari-style) ---------------
+macos-titlebar-style = tabs
+macos-titlebar-proxy-icon = hidden
+
+# --- Theme -----------------------------------------------------------------
+theme = Catppuccin Mocha
+window-colorspace = display-p3
+
+# --- Transparency + blur ---------------------------------------------------
+background-opacity = 0.96
+background-blur = true
+# macOS 26+ native glass alternative (try instead of `background-blur = true`):
+# background-blur = macos-glass-regular
+# background-opacity = 0.7
+
+# --- Padding ---------------------------------------------------------------
+window-padding-x = 10
+window-padding-y = 8
+window-padding-balance = true
+window-padding-color = background
+
+# --- Window state ----------------------------------------------------------
+window-save-state = always
+window-new-tab-position = current
+tab-inherit-working-directory = true
+
+# --- Dividers for splits ---------------------------------------------------
+split-divider-color = #585b70
+
+# --- Font (uncomment and adjust if you want to override the system mono) ---
+# font-family = JetBrains Mono
+# font-size = 13
+# font-thicken = true
